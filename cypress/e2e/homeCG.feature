@@ -228,5 +228,4 @@ Given que aceito os cookies
 Given que opto por selecionar a opção "Conquiste" localizada no menu superior 
 Then sistema apresenta o menu do Conquiste
 Given que opto por selecionar a opção Estudo de Investimento
-Then o sistema direciona para a pagina de login do Carteira Global - Estudo de Investimento 
- 
+Then o sistema direciona para a pagina de login do Carteira Global - Estudo de Investimento

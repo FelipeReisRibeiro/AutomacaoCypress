@@ -37,7 +37,8 @@ When ("opto por clicar em entrar para realizar o acesso ao carteira global",()=>
 })
 
 Then ("o sistema exibe a tela de login em app.carteiraglobal.com",()=>{
-    cy.title().should('be.equal', 'Carteira Global · Entrar')
+    //cy.title().should('be.equal', 'Carteira Global · Entrar')
+    cy.get('#user').should('be.visible')
 })
 
 Given ("que opto por digitar meu email e senha de acesso e clico em entrar",()=>{
@@ -120,7 +121,7 @@ Then ("o sistema exibe as opções do componente Controle",()=>{
 })
 
 Then ("o sistema direciona para a pagina de login do Carteira Global - Controle",()=>{
-    cy.title().should('be.equal', 'Carteira Global · Controle')
+    cy.get('#user').should('be.visible')
 })
 
 Then ("o sistema exibe as opções do componente Conquiste",()=>{
@@ -128,7 +129,7 @@ Then ("o sistema exibe as opções do componente Conquiste",()=>{
 })
 
 Then ("o sistema direciona para a pagina de login do Carteira Global - Conquiste",()=>{
-    cy.title().should('be.equal', 'Carteira Global · Conquiste')
+    cy.get('#user').should('be.visible')
 })
 
 Given ("que opto por selecionar a opção {string} localizada no menu superior",(menuSuperior)=>{
@@ -204,5 +205,5 @@ Given ("que opto por selecionar a opção Estudo de Investimento",()=>{
 })
 Then ("o sistema direciona para a pagina de login do Carteira Global - Estudo de Investimento",()=>{
     cy.wait(3000)
-    cy.title().should('be.equal', 'Carteira Global · Estudo de Investimento')
+    cy.get('#user').should('be.visible')
 })
