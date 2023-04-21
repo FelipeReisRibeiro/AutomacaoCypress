@@ -409,12 +409,15 @@
   },
   "scripts": {
     "cy:open": "cypress open",
+    "cy:headless": "cypress run",
+    "cy:open:mobile": "cypress open --config viewportWidth=1920,viewportHeight=1080",
+    "cy:headMobile": "cypress run --config viewportWidth=1920,viewportHeight=1080",
     "test": "cypress run"
   },
   
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FelipeReisRibeiro/AutomacaoCypress"
+    "url": "git+https://github.com/FelipeReisRibeiro/CarteiraGlobalCypress"
   },
   "keywords": [
     "cypress"
