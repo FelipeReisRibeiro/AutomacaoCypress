@@ -145,8 +145,13 @@ Given ("que opto por selecionar a opção Tesouro Direto",()=>{
 })
 
 Then ("o sistema apresenta o conheça {string} - Carteira Global",(subMenu)=>{
-    cy.wait(7000)
+    cy.wait(5000)
     cy.contains('span.text-step-description',(subMenu)).should('be.visible')
+})
+
+Then ("o sistema apresenta o conheça de Fundos de Investimento - Carteira Global",()=>{
+    cy.wait(5000)
+    cy.contains('div[id="about"] span','Sobre o Fundo de Investimento').should('be.visible')
 })
 
 Given ("que opto por selecionar a opção Fundos de Investimento",()=>{

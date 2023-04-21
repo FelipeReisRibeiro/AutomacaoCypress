@@ -137,7 +137,7 @@ Given que aceito os cookies
 Given que opto por selecionar a opção "Conheça" localizada no menu superior 
 Then sistema apresenta o menu do Conheça
 Given que opto por selecionar a opção Fundos de Investimento
-Then o sistema apresenta o conheça "Fundos de Investimento" - Carteira Global
+Then o sistema apresenta o conheça de Fundos de Investimento - Carteira Global
 
 @ConhecaFundosImob
 Scenario:  Como usuario quero acessar o conheça de Fundos Imobiliários localizado no menu superior Conheça
